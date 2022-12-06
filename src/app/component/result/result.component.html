@@ -1,0 +1,7 @@
+<app-search></app-search>
+<div *ngFor="let film of filteredFilm$ | async">
+  <p>Id: {{film.id}}</p>
+  <p>Title: {{film.title}}</p>
+  <p>Year: {{film.year}}</p>
+  <p>Rating: {{film.imDbRating}}</p>
+</div>

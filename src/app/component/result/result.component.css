@@ -1,0 +1,17 @@
+div {
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  margin: 20px auto;
+  background-color: #FFF1AA;
+}
+
+p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}

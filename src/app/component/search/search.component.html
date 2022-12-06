@@ -1,0 +1,6 @@
+<div>
+  <input [(ngModel)]="name">
+  <input [(ngModel)]="year">
+  <a [routerLink]="['/result', {name: name, year: year}]">Найти</a>
+</div>
+<!--<router-outlet></router-outlet>-->
