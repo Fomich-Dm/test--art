@@ -7,7 +7,7 @@ import {Film} from "../../models/film";
 @Component({
   selector: 'app-result',
   templateUrl: './result.component.html',
-  styleUrls: ['./result.component.css']
+  styleUrls: ['./result.component.scss']
 })
 export class ResultComponent implements OnInit{
   films$: Observable<Film[]>;

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './component/search/search.component';
 import { ResultComponent } from './component/result/result.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {KeyInterceptor} from "./interceptor/key.interceptor";
 import { RateComponent } from './component/rate/rate.component';
@@ -21,7 +21,8 @@ import { RateComponent } from './component/rate/rate.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS,useClass: KeyInterceptor, multi: true}

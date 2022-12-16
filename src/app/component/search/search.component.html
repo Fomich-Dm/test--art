@@ -1,6 +1,6 @@
 <div>
-  <input [(ngModel)]="name">
-  <input [(ngModel)]="year">
+  <input [(ngModel)]="name" placeholder="Name">
+  <input [(ngModel)]="year" placeholder="Year">
   <a [routerLink]="['/result', {name: name, year: year}]">Найти</a>
 </div>
 <!--<router-outlet></router-outlet>-->

@@ -5,7 +5,7 @@ import {Cards} from "../../mock/mock-card";
 @Component({
   selector: 'app-rate',
   templateUrl: './rate.component.html',
-  styleUrls: ['./rate.component.css']
+  styleUrls: ['./rate.component.scss']
 })
 export class RateComponent {
   cards: Card[] = Cards

@@ -1,25 +1,27 @@
 <section class="rate">
-  <h2 class="rate__title">Успейте оформить подписку со скидкой</h2>
-  <div class="cards">
-    <div class="card" *ngFor="let card of cards">
-      <div>
-        <p class="card__subtitle">{{card.subtitle}}</p>
-        <h2 class="card__title">{{card.title}}</h2>
-      </div>
-      <div>
-        <div class="card__price-content">
-          <div>
-          <div class="card__price">
-            <h3 class="card__price-new">{{card.priceNew}}</h3>
-            <p class="card__price-old">{{card.priceOld}}</p>
-          </div>
-          <p class="card__per-month">{{card.perMonth}}</p>
+  <div class="rate__container">
+    <h2 class="rate__title">Успейте оформить подписку со скидкой</h2>
+    <div class="cards">
+      <div class="card" *ngFor="let card of cards">
+        <div>
+          <p class="card__subtitle">{{card.subtitle}}</p>
+          <h2 class="card__title">{{card.title}}</h2>
+        </div>
+        <div>
+          <div class="card__price-content">
+            <div>
+              <div class="card__price">
+                <h3 class="price-new">{{card.priceNew}}</h3>
+                <p class="price-old">{{card.priceOld}}</p>
+              </div>
+              <p class="card__per-month">{{card.perMonth}}</p>
+            </div>
           </div>
           <button class="card__button"><span class="card__button-text">{{card.buttonText}}</span></button>
-        </div>
-        <div class="card__notes">
-          <p class="card__discount" *ngIf="card.discount">{{card.discount}}</p>
-          <p class="card__condition">{{card.condition}}</p>
+          <div class="card__notes">
+            <p class="discount" *ngIf="card.discount">{{card.discount}}</p>
+            <p class="condition">{{card.condition}}</p>
+          </div>
         </div>
       </div>
     </div>
