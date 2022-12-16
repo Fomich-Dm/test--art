@@ -1,10 +1,10 @@
 export interface Card {
   "subtitle": string,
   "title": string,
-  "priceNew": string,
-  "priceOld": string,
+  "priceNew": number,
+  "priceOld": number,
   "perMonth": string,
   "buttonText": string,
   "condition": string,
-  "discount"?: string,
+  "discount"?: number,
 }
